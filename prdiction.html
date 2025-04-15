@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en" dir="front">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.rtl.min.css" integrity="sha384-q8+l9TmX3RaSz3HKGBmqP2u5MkgeN7HrfOJBLcTgZsQsbrx8WqqxdA5PuwUV9WIx" crossorigin="anonymous">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Fake News Detection</title>
+  </head>
+  <body>
+    <header class="text-gray-600 body-font -my-7">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            </svg>
+            <span class="ml-3 text-xl">FAKE NEWS DETECTION</span>
+          </a>
+          <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+            <a  href="/" class="mr-5 hover:text-gray-900"> Home</a>
+            
+            <a  href="/Prediction"class="mr-5 hover:text-gray-900">Prediction</a>
+            
+           
+
+          </nav>
+         
+        </div>
+      </header><hr>
+      <section class="text-gray-600 body-font -my-7">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-20">
+            <h2 class="text-xs text-red-500 tracking-widest font-medium title-font mb-1">FAKE NEWS DETECTION</h2>
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">PURPOSE</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">The purpose of fake news detection is to identify and prevent the spread of false or misleading information, especially in online environments where such content can go viral rapidly and cause significant harm.</p>
+          <br><p class="text_primary"></p><b>{{prediction_text}}</b></p></br>
+          </div>
+          <div class="center">
+            <form action="/Prediction"method="POST" >
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Enter News Article Here</label>
+              <input type="text" class="form-control" name="news" id="News" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">Let's see your news is FAKE or REAL</div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <div>
+             <h1>Contact Us</h1>
+             <p>Name: Tilakshetty</p>
+             <p>Email: tilakshetty07@gmail.com</p>
+             <p>Phone: +918971361792</p>
+            </div>
+          </form></div>
+        </div>
+      </section>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
